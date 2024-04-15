@@ -4819,11 +4819,17 @@ input[type="button"].btn-block {
     font-size: 1.25rem;
     line-height: inherit;
     white-space: nowrap;
+    opacity: .8;
+    z-index: 2;
+    cursor: pointer;
+    transition: all .4s ease;
 }
 
 .navbar-brand:hover,
 .navbar-brand:focus {
     text-decoration: none;
+    opacity: 1;
+    transform: rotate(-45deg);
 }
 
 .navbar-nav {
@@ -11664,7 +11670,7 @@ pre {
 }
 
 .navbar .navbar-brand img {
-    width: 75px;
+    width: 65px;
     -webkit-filter: drop-shadow(1px 2px 25px rgba(206, 212, 218, 0.9));
     filter: drop-shadow(1px 2px 25px rgba(206, 212, 218, 0.9));
 }
